@@ -39,4 +39,8 @@ btnRoll.addEventListener('click', function () {
    }
 });
 
+btnHold.addEventListener('click', function () {
+   //Add the score to active player
 
+   //check if the  players score >=100
+});
