@@ -1,5 +1,7 @@
 'use strict';
 //All elements 
+const player0EL = document.querySelector('.player--0');
+const player1EL = document.querySelector('.player--1');
 const score0 = document.querySelector("#score--0");
 const score1 = document.getElementById("score--1");
 const current0 = document.getElementById('current--0');
@@ -30,8 +32,10 @@ btnRoll.addEventListener('click', function () {
       document.getElementById(`current--${activePlayer}`).textContent = currentScore;
    } else {
       document.getElementById(`current--${activePlayer}`).textContent = 0;
-      activePlayer = activePlayer == 0 ? 1 : 0;
       currentScore = 0;
+      activePlayer = activePlayer == 0 ? 1 : 0;
+      player0EL.classList.toggle('player--active');
+      player1EL.classList.toggle('player--active');
    }
 });
 
