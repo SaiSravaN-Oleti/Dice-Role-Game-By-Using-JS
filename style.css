@@ -31,7 +31,7 @@ main {
   backdrop-filter: blur(200px);
   filter: blur();
   box-shadow: 0 3rem 5rem rgba(117, 245, 228, 0.541);
-  border-radius: 9px;
+  border-radius: 20px;
   overflow: hidden;
   display: flex;
 }
@@ -175,4 +175,8 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+.hidden {
+  display: none;
 }
