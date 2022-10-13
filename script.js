@@ -54,8 +54,8 @@ btnHold.addEventListener('click', function () {
       //check if the  players score >=100
       if (scores[activePlayer] >= 20) {
          playing = false;
-         document.querySelector(`.player--${activePlayer}`).classList.add('.player--winner');
-         document.querySelector(`.player--${activePlayer}`).classList.remove('.player--active');
+         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
+         document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
       } else {
          //Switch to next player
          switchPlayer();
